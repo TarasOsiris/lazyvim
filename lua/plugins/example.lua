@@ -37,17 +37,6 @@ if true then
         end,
       },
     },
-
-    {
-      "stevearc/conform.nvim",
-      opts = {
-        formatters = {
-          csharpier = {
-            prepend_args = { "--no-cache", "--config-path", "/Users/taras/.config/.csharpierrc" },
-          },
-        },
-      },
-    },
   }
 end
 
