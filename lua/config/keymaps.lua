@@ -6,3 +6,7 @@
 local map = vim.keymap.set
 
 map("i", "jk", "<esc>")
+
+-- Keep matches center screen when cycling with n|N
+map("n", "n", "nzzzv", { desc = "Fwd  search '/' or '?'" })
+map("n", "N", "Nzzzv", { desc = "Back search '/' or '?'" })

@@ -16,7 +16,7 @@ if true then
         patterns = { ".git", "_darcs", ".hg", ".bzr", ".svn", "Makefile", "package.json" },
       },
       event = "VeryLazy",
-      config = function(_, opts)
+      monfig = function(_, opts)
         require("project_nvim").setup(opts)
         require("lazyvim.util").on_load("telescope.nvim", function()
           require("telescope").load_extension("projects")
@@ -35,6 +35,17 @@ if true then
         config = function()
           require("telescope").load_extension("fzf")
         end,
+      },
+    },
+
+    {
+      "stevearc/conform.nvim",
+      opts = {
+        formatters = {
+          csharpier = {
+            prepend_args = { "--no-cache", "--config-path", "/Users/taras/.config/.csharpierrc" },
+          },
+        },
       },
     },
   }
