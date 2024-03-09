@@ -10,3 +10,6 @@ map("i", "jk", "<esc>")
 -- Keep matches center screen when cycling with n|N
 map("n", "n", "nzzzv", { desc = "Fwd  search '/' or '?'" })
 map("n", "N", "Nzzzv", { desc = "Back search '/' or '?'" })
+
+-- find in neotree
+vim.keymap.set("n", "<leader>fx", ":Neotree reveal<CR>", {})
