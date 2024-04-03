@@ -1,7 +1,5 @@
 return {
   -- add gruvbox
-  { "ellisonleao/gruvbox.nvim" },
-  { "doums/darcula" },
   { "briones-gabriel/darcula-solid.nvim" },
   { "rktjmp/lush.nvim" },
 
