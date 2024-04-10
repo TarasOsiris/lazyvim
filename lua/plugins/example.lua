@@ -26,6 +26,17 @@ if true then
         { "<leader>fp", "<Cmd>Telescope projects<CR>", desc = "Projects" },
       },
     },
+
+    {
+      "nvim-telescope/telescope.nvim",
+      -- change some options
+      opts = {
+        defaults = {
+          path_display = { "smart" },
+        },
+      },
+    },
+
     -- add telescope-fzf-native
     {
       "telescope.nvim",
@@ -105,6 +116,7 @@ return {
         layout_config = { prompt_position = "top" },
         sorting_strategy = "ascending",
         winblend = 0,
+        path_display = { "shorten" },
       },
     },
   },

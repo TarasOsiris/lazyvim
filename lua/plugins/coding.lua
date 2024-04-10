@@ -1,4 +1,8 @@
 return {
+
+  {
+    "dlvandenberg/tree-sitter-angular",
+  },
   {
     "stevearc/conform.nvim",
     opts = {
