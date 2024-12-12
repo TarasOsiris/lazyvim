@@ -8,6 +8,8 @@ local map = vim.keymap.set
 map("i", "jk", "<esc>")
 
 -- Keep matches center screen when cycling with n|N
+-- "zz": Centers the cursor vertically in the window after moving to the search result.
+-- "zv": Ensures the folds containing the cursor are opened (if folding is enabled).
 map("n", "n", "nzzzv", { desc = "Fwd  search '/' or '?'" })
 map("n", "N", "Nzzzv", { desc = "Back search '/' or '?'" })
 
