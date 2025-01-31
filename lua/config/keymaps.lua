@@ -12,6 +12,8 @@ map("i", "jk", "<esc>")
 -- "zv": Ensures the folds containing the cursor are opened (if folding is enabled).
 map("n", "n", "nzzzv", { desc = "Fwd  search '/' or '?'" })
 map("n", "N", "Nzzzv", { desc = "Back search '/' or '?'" })
+map("n", "H", "^")
+map("n", "L", "$")
 
 -- find in neotree
 vim.keymap.set("n", "<leader>fx", ":Neotree reveal<CR>", {})

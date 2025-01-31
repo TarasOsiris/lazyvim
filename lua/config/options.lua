@@ -4,5 +4,5 @@
 --
 --
 --Uncomment to show invisible characters (tabs and spaces)
--- vim.opt.list = true
--- vim.opt.listchars:append({ tab = ">-", space = "." })
+vim.opt.list = true
+vim.opt.listchars:append({ tab = ">-", space = "." })
